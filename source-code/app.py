@@ -163,7 +163,7 @@ def run_unet_inference(image_array, model, threshold_val=0.5):
 
 # --- UI Layout ---
 st.title("🧬 Kidney Tumor Segmentation Engine")
-st.markdown("**Powered by Attention U-Net++ (KiTS19 Benchmark 0.96+)**")
+st.markdown("**Powered by Attention U-Net++ (KiTS19 Benchmark 0.981+)**")
 
 # Load model quietly into memory
 try:

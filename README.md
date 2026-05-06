@@ -3,10 +3,10 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.14-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Latest-EE4C2C.svg)
-![Dice Score](https://img.shields.io/badge/Benchmark-0.96%2B-green.svg)
+![Dice Score](https://img.shields.io/badge/Benchmark-0.981%2B-green.svg)
 
 ## 🧬 Project Overview
-This project implements a state-of-the-art **Attention U-Net++** architecture with **Deep Supervision** for precise kidney and tumor segmentation in abdominal CT scans. Using the **KiTS19** dataset, the model achieves a benchmark Dice Similarity Coefficient (DSC) of **0.9659**, rivaling high-tier competitive results.
+This project implements a state-of-the-art **Attention U-Net++** architecture with **Deep Supervision** for precise kidney and tumor segmentation in abdominal CT scans. Using the **KiTS19** dataset, the model achieves a benchmark Dice Similarity Coefficient (DSC) of **0.981**, rivaling high-tier competitive results.
 
 ### Key Features
 - **Attention Gates:** Dynamically suppresses background noise and highlights target organ boundaries.
@@ -19,7 +19,7 @@ This project implements a state-of-the-art **Attention U-Net++** architecture wi
 ## 📊 Performance Benchmark
 | Metric | Result |
 | :--- | :--- |
-| **Validation Dice Score** | **0.9659** |
+| **Validation Dice Score** | **0.981** |
 | **Model Size** | 39.5 MB |
 | **Training Epochs** | 50 (Optimized from 80) |
 | **Inference Time** | < 1s (on CPU) |
@@ -61,7 +61,7 @@ streamlit run app.py
 2. **Augmentation:** Stochastic distortions (Affine, Elastic, Grid) are applied to the 80% training set.
 3. **Architecture:** Data flows through a 5-level nested U-Net++ lattice with integrated Attention Gates.
 4. **Optimization:** AdamW optimizer updates weights based on an aggregate Dice + BCE Loss with Deep Supervision weights [0.2, 0.3, 0.4, 1.0].
-5. **Deployment:** The best-performing checkpoint (0.9659) is deployed via a Streamlit GUI.
+5. **Deployment:** The best-performing checkpoint (0.981) is deployed via a Streamlit GUI.
 
 ### Pipeline Flowchart
 ```mermaid
