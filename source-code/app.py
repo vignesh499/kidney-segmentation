@@ -135,7 +135,7 @@ def load_medical_model():
     # Only load deep_supervision=False for inference to save math
     model = Attention_UNet_PlusPlus(in_channels=1, num_classes=1, deep_supervision=False)
     # Ensure CPU loading for laptops
-    model.load_state_dict(torch.load("Final-model.pth", map_location=torch.device('cpu')), strict=False)
+    model.load_state_dict(torch.load("attention_unet_plusplus_kits19.pth", map_location=torch.device('cpu')), strict=False)
     model.eval()
     return model
 

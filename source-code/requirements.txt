@@ -1,0 +1,10 @@
+torch
+numpy
+opencv-python
+Pillow
+streamlit
+nibabel
+albumentations
+scikit-learn
+matplotlib
+tqdm
